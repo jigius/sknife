@@ -3,7 +3,7 @@ namespace jigius\sknife\Utils\Html\Filters;
 
 class Minification
 {
-    public function pipe($obj)
+    public function _($obj)
     {
         if (!is_string($obj)) {
             throw new \InvalidArgument("string type is expected");

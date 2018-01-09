@@ -35,13 +35,13 @@ class ScriptsInline extends Foundation\Singleton
             return "";
         }
         $output = implode(
-            "\r\n",
+            PHP_EOL,
             array_merge(
                 ["<script>"],
                 $output,
                 ["</script>"]
             )
         );
-        return $output;
+        return $output . PHP_EOL;
     }
 }

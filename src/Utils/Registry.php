@@ -89,6 +89,9 @@ class Registry implements RegistryInterface
     public function get($key, $default = null)
     {
         if (($edge =& $this->getEdge($key)) === null) {
+            if ($default === null) {
+                throw new \OutOfBoundsException();
+            }
             return $default;
         }
         return $edge;

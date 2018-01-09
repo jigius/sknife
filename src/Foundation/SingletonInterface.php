@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Pf\Foundation;
+namespace jigius\sknife\Foundation;
 
 interface SingletonInterface
 {
